@@ -39,7 +39,6 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vendor \
     vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -59,7 +58,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-derp
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -249,13 +248,13 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 # FM
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+#PRODUCT_PACKAGES += \
+#    android.hardware.broadcastradio@1.0-impl \
+#    FM2 \
+#    libqcomfm_jni \
+#    qcom.fmradio
 
-PRODUCT_BOOT_JARS += qcom.fmradio
+#PRODUCT_BOOT_JARS += qcom.fmradio
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -372,6 +371,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
+#NoCutoutOverlay
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -397,6 +400,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2
+
+#RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # RenderScript
 PRODUCT_PACKAGES += \

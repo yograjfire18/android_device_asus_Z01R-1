@@ -1,3 +1,7 @@
+# Apex Metadata
+/data/vendor/metadata_apex(/.*)?                                            u:object_r:apex_metadata_file:s0
+/data/vendor/metadata_apex/sessions(/.*)?                                   u:object_r:apex_metadata_file:s0
+
 # Asus Mounts
 /(ADF|vendor/ADF)                                                           u:object_r:adf_file:s0
 /(APD|vendor/APD)                                                           u:object_r:apd_file:s0

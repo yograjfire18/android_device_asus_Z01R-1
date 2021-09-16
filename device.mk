@@ -208,8 +208,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.target.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc \
-    apex_metadata.rc
+    ueventd.qcom.rc
 
 # Context Hub
 PRODUCT_PACKAGES += \

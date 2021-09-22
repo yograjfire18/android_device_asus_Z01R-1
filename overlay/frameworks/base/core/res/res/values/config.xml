@@ -582,13 +582,14 @@
      <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">true</bool>
-    
-	<!-- Whether the device supports Smart Pixels -->
-    <bool name="config_enableSmartPixels">true</bool>
 	
-	<!-- Show a custom view for FOD -->
+    <!-- Show a custom view for FOD -->
     <bool name="config_needCustomFODView">true</bool>
 	
-	<!-- Whether device supports in-display fingerprint when screen is turned off -->
+    <!-- Whether device supports in-display fingerprint when screen is turned off -->
     <bool name="config_supportsScreenOffInDisplayFingerprint">true</bool>
+	
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+
 </resources>

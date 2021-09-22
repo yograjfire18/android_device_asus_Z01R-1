@@ -14,6 +14,15 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- ROM maintainer name -->
-    <string name="maintainer_name">YogRaJ_SinGh</string>
+    <string name="maintainer_name">Rishik_Rastogi</string>
+     
+     
+     <!-- Battery Health enable -->
+<bool name="config_supportBatteryHealth">true</bool>
+
+	<!-- Battery Health -->
+  <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
+  <string name="config_batCurCap">/sys/class/power_supply/bms/charge_counter</string>
+  <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
 
 </resources>

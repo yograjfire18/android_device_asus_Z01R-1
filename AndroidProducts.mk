@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xperience_Z01R.mk
+    $(LOCAL_DIR)/xdroid_Z01R.mk

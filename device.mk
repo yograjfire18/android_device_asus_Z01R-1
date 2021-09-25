@@ -39,7 +39,6 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vendor \
     vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -189,7 +188,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
     libdng_sdk.vendor \
-    Snap \
     vendor.qti.hardware.camera.device@1.0
 
 # Common init scripts
@@ -232,9 +230,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@1.0-service
 
 # Doze
-PRODUCT_PACKAGES += \
-    AsusDoze \
-    AsusPocketMode
+#PRODUCT_PACKAGES += \
+#    AsusDoze \
+#    AsusPocketMode
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -249,13 +247,13 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 # FM
-#PRODUCT_PACKAGES += \
-#    android.hardware.broadcastradio@1.0-impl \
-#    FM2 \
-#    libqcomfm_jni \
-#    qcom.fmradio
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 
-#PRODUCT_BOOT_JARS += qcom.fmradio
+PRODUCT_BOOT_JARS += qcom.fmradio
 
 # GPS
 PRODUCT_PACKAGES += \

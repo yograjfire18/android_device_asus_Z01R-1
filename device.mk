@@ -416,9 +416,9 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom/display \
-    hardware/qcom/media \
-    vendor/qcom/opensource/audio-hal/primary-hal
+    hardware/qcom-caf/sdm845/media \
+    hardware/qcom-caf/sdm845/audio \
+    hardware/qcom-caf/sdm845/display
 
 # Telephony
 PRODUCT_PACKAGES += \

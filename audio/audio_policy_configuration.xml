@@ -410,7 +410,10 @@
 
     <xi:include href="/vendor/etc/audio_policy_volumes.xml"/>
     <xi:include href="/vendor/etc/default_volume_tables.xml"/>
-
+    
+    <!-- Bluetooth Audio HAL for Hearing aid -->
+        <xi:include href="/vendor/etc/bluetooth_hearing_aid_audio_policy_configuration.xml"/>
+   
     <!-- End of Volume section -->
-
+   
 </audioPolicyConfiguration>

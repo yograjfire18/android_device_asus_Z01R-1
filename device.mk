@@ -414,12 +414,14 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm845/display
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm845/audio
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/sdm845/media \
-    hardware/qcom-caf/sdm845/audio \
-    hardware/qcom-caf/sdm845/display
+    hardware/qcom-caf/sdm845
 
 # Telephony
 PRODUCT_PACKAGES += \

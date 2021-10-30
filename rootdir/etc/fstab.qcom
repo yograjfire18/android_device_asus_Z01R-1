@@ -1,4 +1,4 @@
-Copyright (c) 2018, The Linux Foundation. All rights reserved.
+# Copyright (c) 2018, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -47,4 +47,4 @@ Copyright (c) 2018, The Linux Foundation. All rights reserved.
 # The update_engine code looks for this entry in order to determine the boot device address
 # and fails if it does not find it.
 /dev/block/bootdevice/by-name/misc                      /misc              emmc    defaults                                             defaults
-/dev/block/zram0                                        none               swap    defaults
+/dev/block/zram0                                        none               swap    defaults                                             zramsize=1073741824
